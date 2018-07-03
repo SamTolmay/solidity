@@ -14,20 +14,9 @@
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"name": "_message",
-				"type": "string"
-			}
-		],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
 		"constant": true,
 		"inputs": [],
-		"name": "get",
+		"name": "message",
 		"outputs": [
 			{
 				"name": "",
@@ -37,5 +26,16 @@
 		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_message",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
 	}
 ]
