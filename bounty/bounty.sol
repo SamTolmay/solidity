@@ -1,5 +1,6 @@
 pragma solidity ^0.4.22;
 
+
 /// @title A stack overflow style question and answer service with bounties.
 /// @author Sam Tolmay
 contract Bounty {
@@ -20,7 +21,6 @@ contract Bounty {
     Question[] public questions;
     mapping (uint => address) public questionAskedBy;
 
-
     constructor() public {
         owner = msg.sender;
     }
@@ -29,7 +29,7 @@ contract Bounty {
         Question memory q;
         q.title = _title;
         q.body = _body;
-        uint id = questions.push(q) -1;
+        uint id = questions.push(q) - 1;
         questionAskedBy[id] = msg.sender;
         emit NewQuestion(id, _title, _body);
         return id;
